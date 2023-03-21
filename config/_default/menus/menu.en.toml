@@ -16,11 +16,11 @@
 [[main]]
   parent = "Links"
   name = "LinkedIn"
-  url = "https://www.linkedin.com/tiagopalhota"
+  url = "https://www.linkedin.com/in/tiagopalhota/"
 [[main]]
   parent = "Links"
   name = "GitHub"
-  url = "https:/www.github.com/tiagopalhota"
+  url = "https://www.github.com/tiagopalhota"
 [[main]]
   name = "About"
   url = "about/"
@@ -40,7 +40,7 @@
 [[social]]
   name = "linkedin"
   weight = 3
-  url = "https://www.linkedin.com/tiagopalhota"
+  url = "https://www.linkedin.com/in/tiagopalhota"
 [[social]]
   name = "rss"
   weight = 4

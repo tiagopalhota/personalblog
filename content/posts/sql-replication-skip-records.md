@@ -42,10 +42,25 @@ sp_helpsubscriptionerrors [ @publisher = ] 'publisher'
 , [ @subscriber_db = ] 'subscriber_db'
 {{% /notice %}}
 
+We should get something like this:
 ![sp_helpsubscriptionerrors, resultset](/images/replication-skip-records-helpsubscriptionerrors.png)
 
 {{% notice warning "Warning" %}}
 It´s possible that you see past events in the output of this stored procedure. Take the time in consideration.
+{{% /notice %}}
+
+To understand what command we are really talking about, we can use sp_browsereplcmds. This will return a result set in a readable format of the replicate commands stored in the distribution database. This SP is executed at the distributor on the distribution database.
+The syntax of the procedure is:
+
+{{% notice tip "sp_browsereplcmds Syntax" %}}
+sp_browsereplcmds [ [ @xact_seqno_start = ] 'xact_seqno_start' ]
+[ , [ @xact_seqno_end = ] 'xact_seqno_end' ]
+[ , [ @originator_id = ] 'originator_id' ]
+[ , [ @publisher_database_id = ] 'publisher_database_id' ]
+[ , [ @article_id = ] 'article_id' ]
+[ , [ @command_id= ] command_id ]
+[ , [ @agent_id = ] agent_id ]
+[ , [ @compatibility_level = ] compatibility_level ]
 {{% /notice %}}
 
 ## ❓ I´ve run sp_setsubscriptionxactseqno on the subscriber, now what?

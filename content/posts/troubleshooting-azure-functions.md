@@ -13,7 +13,8 @@ It all started with an .NET azure function not being able to login into an on-pr
 
 In order to understand if the function is able to reach the on-premises server, I learned that we can get into the running container by ssh/bash whilst using the Kudu service.
 Kudu is the engine behind a number of features in Azure App Service . In order to access Kudu, we need to inject the word "scm" between the app-name and the azurewebsites.net
-For eg: https://app-name.**scm**.azurewebsites.net
+For eg: https://app-name.**scm**.azurewebsites.net.
+There´s also an easier way to get to Kudu by visiting the Azure Function blade and then Development Tools -> Advanced Tools.
 
 ![Azure Kudu Service](/images/20230703kudu-azurefunctions.png)
 

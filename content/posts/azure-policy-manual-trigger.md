@@ -1,7 +1,7 @@
 ---
 title: 'Azure Policy Manual Trigger'
 date: 2023-07-06T16:30:50+01:00
-draft: true
+draft: false
 description: 'Reminds me on how to manual kick in the Azure Policy compliance checks'
 thumbnail: '/images/azurepolicy.png'
 ---

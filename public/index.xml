@@ -1,10 +1,63 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>·Tiago´s webspace</title>
-    <link>http://tiagopalhota.net/</link>
-    <description>Recent content on ·Tiago´s webspace</description>
+    <title>Tiago Palhota Webspace</title>
+    <link>https://tiagopalhota.net/blog/</link>
+    <description>Recent content on Tiago Palhota Webspace</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://tiagopalhota.net/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright © 2023, Tiago Palhota </copyright>
+    <lastBuildDate>Mon, 03 Jul 2023 12:59:15 +0100</lastBuildDate><atom:link href="https://tiagopalhota.net/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Network troubleshooting for Azure Functions</title>
+      <link>https://tiagopalhota.net/blog/posts/troubleshooting-azure-functions/</link>
+      <pubDate>Mon, 03 Jul 2023 12:59:15 +0100</pubDate>
+      
+      <guid>https://tiagopalhota.net/blog/posts/troubleshooting-azure-functions/</guid>
+      <description>
+        
+          
+            How to troubleshoot Networking in Azure Functions Geez, what an experience this has been! It all started with an .NET azure function not being able to login into an on-premises SQL Server due to TLS negotiation. Now what?
+In order to understand if the function is able to reach the on-premises server, I learned that we can get into the running container by ssh/bash whilst using the Kudu service. Kudu is the engine behind a number of features in Azure App Service .
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Skipping records in SQL Server replication</title>
+      <link>https://tiagopalhota.net/blog/posts/sql-replication-skip-records/</link>
+      <pubDate>Tue, 18 Apr 2023 16:07:15 +0100</pubDate>
+      
+      <guid>https://tiagopalhota.net/blog/posts/sql-replication-skip-records/</guid>
+      <description>
+        
+          
+            Replication is down!😟 Now what?! This happened to us today, one of our subscribers, decided to implement a few triggers on their subscriptions. These triggers were inserting data into other tables that had a few foreign keys to respect their data integrity.
+The problem here is that for some reason one of these foreign keys failed, the entire replication got brought to a halt. No more data is delivered until the replicated transaction can complete.
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Hello World</title>
+      <link>https://tiagopalhota.net/blog/posts/hello-world/</link>
+      <pubDate>Tue, 21 Mar 2023 17:49:31 +0000</pubDate>
+      
+      <guid>https://tiagopalhota.net/blog/posts/hello-world/</guid>
+      <description>
+        
+          
+            Hi 👋 there! I guess this is it. I finally got a blog up and running.
+I´ve been told many times that blog helps our mind and the most important thing is to do it for ourselves, not others. This has been a massive issue for me because the web is full of great posts by great minds and I always thought I hadn´t anything else to contribute. 😕
+The problem in this mindset is that I was thinking about others, not myself.
+          
+          
+        
+      </description>
+    </item>
+    
   </channel>
 </rss>
